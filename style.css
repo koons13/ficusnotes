@@ -1,0 +1,345 @@
+:root {
+    --primary-color: #2563eb;
+    --text-color: #1f2937;
+    --light-text: #6b7280;
+    --background: #ffffff;
+    --section-bg: #f9fafb;
+    --pro-color: #7c3aed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--background);
+}
+
+/* Header Styles */
+header {
+    padding: 1.5rem 2rem;
+    position: fixed;
+    width: 100%;
+    background-color: var(--background);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    padding: 12rem 2rem 4rem;
+    text-align: center;
+    background-color: var(--section-bg);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.platforms {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.platforms span {
+    font-size: 1.25rem;
+    color: var(--light-text);
+}
+
+/* Intro Section */
+.intro {
+    padding: 6rem 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.intro p {
+    font-size: 1.25rem;
+    color: var(--light-text);
+}
+
+/* Features Section */
+.features {
+    padding: 6rem 2rem;
+    background-color: var(--background);
+}
+
+.feature-group {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.feature-group h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-group ul {
+    list-style: none;
+}
+
+.feature-group li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.feature-group li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 6rem 2rem;
+    background-color: var(--section-bg);
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-subtitle {
+    color: var(--light-text);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-tiers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+}
+
+.pricing-tier {
+    background-color: var(--background);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: left;
+    position: relative;
+}
+
+.pricing-tier.pro {
+    border: 2px solid var(--pro-color);
+}
+
+.pro-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--pro-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.pricing-tier h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-tier ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.pricing-tier li {
+    margin-bottom: 1rem;
+    color: var(--light-text);
+}
+
+.pricing-tier li del {
+    color: #9ca3af;
+}
+
+.pricing-info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.pricing-info p {
+    margin-bottom: 1rem;
+}
+
+.best-deal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.discount {
+    background-color: var(--pro-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.yearly-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.pricing-note {
+    color: var(--light-text);
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+/* Download Section */
+.download {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.download h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.app-store-button {
+    display: inline-block;
+}
+
+.app-store-button img {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.app-store-button:hover img {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    padding: 4rem 2rem;
+    background-color: var(--section-bg);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.footer-links a {
+    color: var(--light-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    color: var(--light-text);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+.copyright {
+    text-align: center;
+    color: var(--light-text);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .platforms {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .pricing-tiers {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
