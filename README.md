@@ -30,15 +30,6 @@ A modern landing page for Ficus Notes, an intelligent note-taking app that autom
 - `assets/` - Images and other assets
 - `CNAME` - Custom domain configuration
 
-## Design Inspiration
-
-This website takes inspiration from [Bear.app](http://bear.app), incorporating:
-- Clean, distraction-free design
-- Beautiful typography and spacing
-- Subtle shadows and animations
-- Professional color scheme
-- Focus on user experience
-
 ## Core Features Highlighted
 
 - **Auto-Categorization**: Automatically organizes notes into appropriate folders
@@ -48,9 +39,6 @@ This website takes inspiration from [Bear.app](http://bear.app), incorporating:
 - **Context Understanding**: Technology that understands meaning, not just keywords
 - **iCloud Sync**: Seamless synchronization across Apple devices
 
-## Philosophy
-
-The app embodies the principle from *Atomic Habits* by James Clear: "You do not rise to the level of your goals. You fall to the level of your systems." Ficus Notes is your system for organized thinking, removing the friction of manual organization and letting you focus on what matters most.
 
 ## Getting Started
 
