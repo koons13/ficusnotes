@@ -62,6 +62,21 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
+    min-height: 3rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+.logo-image {
+    height: 3rem;
+    width: auto;
+    max-width: 120px;
+    object-fit: contain;
+    display: block;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    flex-shrink: 0;
+    background-color: #f0f0f0;
 }
 
 .logo i {
@@ -129,6 +144,15 @@ nav {
     color: var(--text-light);
     margin-bottom: 2rem;
     line-height: 1.6;
+}
+
+.hero-tagline {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .platforms {
