@@ -106,12 +106,26 @@ window.addEventListener('load', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('img');
     images.forEach(img => {
+        // Set initial state
+        img.style.opacity = '0';
+        img.style.transition = 'opacity 0.5s ease';
+        
+        // Handle successful load
         img.addEventListener('load', function() {
+            console.log('Image loaded:', this.src);
             this.style.opacity = '1';
         });
         
-        img.style.opacity = '0';
-        img.style.transition = 'opacity 0.3s ease';
+        // Handle load error
+        img.addEventListener('error', function() {
+            console.error('Image failed to load:', this.src);
+            this.style.opacity = '1'; // Show anyway, might be a path issue
+        });
+        
+        // If image is already cached/loaded, show it immediately
+        if (img.complete && img.naturalHeight !== 0) {
+            img.style.opacity = '1';
+        }
     });
 });
 
